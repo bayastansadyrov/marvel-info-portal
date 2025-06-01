@@ -49,7 +49,16 @@ const View = ({ data }) => {
 	return (
 		<>
 			<div className="char__basics">
-				<img src={thumbnail} alt={name} style={imgStyle} />
+				<img
+					src={thumbnail}
+					alt={name}
+					style={imgStyle}
+					onError={(e) => {
+						e.target.onerror = null;
+						e.target.src =
+							'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg';
+					}}
+				/>
 				<div>
 					<div className="char__info-name">{name}</div>
 					<div className="char__btns">

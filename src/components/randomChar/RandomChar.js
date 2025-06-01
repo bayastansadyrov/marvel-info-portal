@@ -71,6 +71,11 @@ const View = ({ data }) => {
 				alt="Random character"
 				className="randomchar__img"
 				style={imgStyle}
+				onError={(e) => {
+					e.target.onerror = null;
+					e.target.src =
+						'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg';
+				}}
 			/>
 			<div className="randomchar__info">
 				<p className="randomchar__name">{name}</p>

@@ -45,13 +45,11 @@ const useMarvelService = () => {
 			description: char.description
 				? `${char.description.slice(0, 210)}...`
 				: 'There is no description for this character',
-			thumbnail:
-				char.thumbnail.path + '.' + char.thumbnail.extension
-					? char.thumbnail.path + '.' + char.thumbnail.extension
-					: 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg',
+			thumbnail: char.thumbnail.path + '.' + char.thumbnail.extension,
 			homepage: char.urls[0].url,
 			wiki: char.urls[1].url,
 			comics: char.comics.items,
+			// http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available.jpg
 		};
 	};
 
