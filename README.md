@@ -28,4 +28,4 @@ A high-performance React web application that integrates with the official **Mar
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/marvel-app.git](https://github.com/your-username/marvel-app.git)
+   git clone [https://github.com/bayastansadyrov/marvel-info-portal.git](https://github.com/bayastansadyrov/marvel-info-portal.git)
